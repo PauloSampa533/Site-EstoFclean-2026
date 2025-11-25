@@ -556,7 +556,7 @@ nav {
 }
 
 .testimonials-grid {
-    display: inline-flexbox;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     
@@ -1007,5 +1007,30 @@ footer {
 
     .contact-form {
         padding: 30px 20px;
+    }
+}
+/* Ajustes apenas para mobile */
+@media (max-width: 768px) {
+
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    /* Garante que o print do Google não estoura a tela */
+    .testimonial-card img {
+        width: 100% !important;
+        height: auto;
+        border-radius: 12px;
+        display: block;
     }
 }
