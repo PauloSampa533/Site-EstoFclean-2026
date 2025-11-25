@@ -72,10 +72,6 @@ nav {
     color: var(--white);
     font-size: 24px;
 }
-span img {
-    border-radius: 300px;
-    width:50px;
-}
 
 .nav-links {
     display: flex;
@@ -556,20 +552,24 @@ span img {
 .testimonials {
     padding: 120px 0;
     background: var(--light-bg);
+    
 }
 
 .testimonials-grid {
-    display: grid;
+    display: inline-flexbox;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    
+
 }
 
 .testimonial-card {
-    background: var(--white);
-    padding: 40px;
+    background:var(--light-bg);
+    padding:  40px;
     border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 40 4px 20px rgba(0, 0, 0, 0.06);
     transition: all 0.3s;
+    
 }
 
 .testimonial-card:hover {
@@ -594,6 +594,7 @@ span img {
     display: flex;
     align-items: center;
     gap: 15px;
+    
 }
 
 .author-avatar {
