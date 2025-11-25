@@ -621,6 +621,21 @@ nav {
     font-size: 14px;
     color: var(--text-light);
 }
+/* Ajuste das imagens de depoimentos */
+.testimonial-card img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+@media (max-width: 480px) {
+    .testimonial-card img {
+        max-width: 260px;
+    }
+}
+
 
 /* Contact Section */
 .contact {
