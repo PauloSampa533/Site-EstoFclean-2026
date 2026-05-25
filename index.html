@@ -452,12 +452,16 @@
                 <div class="contact-form fade-in">
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="nome">Nome Completo *</label>
+                            <label for="nome">Nome Completo</label>
                             <input type="text" id="nome" name="nome" required>
                         </div>
                         <div class="form-group">
-                            <label for="telefone">Telefone/WhatsApp *</label>
+                            <label for="telefone">Telefone/WhatsApp</label>
                             <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Endereco">Endereço/Realização do Serviço</label>
+                            <input type="tel" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade..." required>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
@@ -467,10 +471,13 @@
                             <label for="servico">Serviço Desejado *</label>
                             <select id="servico" name="servico" required>
                                 <option value="">Selecione...</option>
-                                <option value="sofas">Higienização de Sofás/Poltronas</option>
-                                <option value="tapetes">Higienização de Tapetes/Carpetes</option>
+                                <option value="sofas">Higienização de Sofás</option>
+                                <option value="sofas">Higienização de Poltronas</option>
+                                <option value="tapetes">Higienização de Carpetes</option>
+                                <option value="tapetes">Higienização de Tapetes</option>
                                 <option value="colchoes">Higienização de Colchões</option>
                                 <option value="carros">Higienização de Bancos de Carros</option>
+                                <option value="carros">Higienização de Cadeiras</option>
                                 <option value="impermeabilizacao">Impermeabilização</option>
                                 <option value="completo">Pacote Completo</option>
                             </select>
