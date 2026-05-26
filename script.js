@@ -71,6 +71,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     // Pega os valores do formulário
     const nome = document.getElementById('nome').value;
     const telefone = document.getElementById('telefone').value;
+    const endereco = document.getElementById('endereco').value;
     const email = document.getElementById('email').value;
     const servico = document.getElementById('servico').selectedOptions[0].text;
     const mensagem = document.getElementById('mensagem').value;
@@ -78,6 +79,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     // Monta a mensagem para o WhatsApp
     let whatsappMsg = `Olá! Meu nome é *${nome}*.%0A%0A`;
     whatsappMsg += `📋 *Serviço de interesse:* ${servico}%0A%0A`;
+    whatsappMsg += `📍 *Endereço para realização do serviço:* ${endereco}%0A%0A`;
     
     if (mensagem) {
         whatsappMsg += `💬 *Mensagem:* ${mensagem}%0A%0A`;
