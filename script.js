@@ -78,17 +78,17 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     
     // Monta a mensagem para o WhatsApp
     let whatsappMsg = `Olá! Meu nome é *${nome}*.%0A%0A`;
-    whatsappMsg += `📋 *Serviço de interesse:* ${servico}%0A%0A`;
-    whatsappMsg += `📍 *Endereço para realização do serviço:* ${endereco}%0A%0A`;
+    whatsappMsg += ` *Serviço de interesse:* ${servico}%0A%0A`;
+    whatsappMsg += ` *Endereço para realização do serviço:* ${endereco}%0A%0A`;
     
     if (mensagem) {
-        whatsappMsg += `💬 *Mensagem:* ${mensagem}%0A%0A`;
+        whatsappMsg += ` *Mensagem:* ${mensagem}%0A%0A`;
     }
     
-    whatsappMsg += `📱 *Telefone:* ${telefone}`;
+    whatsappMsg += ` *Telefone:* ${telefone}`;
     
     if (email) {
-        whatsappMsg += `%0A📧 *E-mail:* ${email}`;
+        whatsappMsg += `%0A *E-mail:* ${email}`;
     }
     
     // Abre o WhatsApp em nova aba
